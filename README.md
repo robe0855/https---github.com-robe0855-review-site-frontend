@@ -1,3 +1,9 @@
+The GitHub repository must include a README file containing:
+The type of review site: Movie Site.
+The choice of Headless CMS: WordPress REST API.
+The choice of frontend tool: Vue, 
+
+
 # review-site
 
 ## Project setup
