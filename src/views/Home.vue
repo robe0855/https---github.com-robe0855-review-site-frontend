@@ -14,6 +14,9 @@
   
   
   <script>
+  import { API_BASE_URL } from '@/config';
+
+const response = await fetch(`${API_BASE_URL}/review`);
   import { ref, onMounted } from 'vue';
   
   export default {
@@ -26,7 +29,7 @@
   
       const fetchReviews = async () => {
         try {
-          const response = await fetch('https://your-pantheon-site.com/wp-json/wp/v2/review');
+          const response = await fetch('https://live-reviewmattcms.pantheonsite.io/wp-json/wp/v2');
           reviews.value = await response.json();
         } catch (error) {
           console.error('Error fetching reviews:', error);
